@@ -5,19 +5,20 @@ import PackageDescription
 
 let package = Package(
     name: "MPCManagerSPM",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "MPCManagerSPM",
             targets: ["MPCManagerSPM"]
-        ),
+        )
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "MPCManagerSPM"
-        ),
-
+        .binaryTarget(
+            name: "MPCManagerSPM",
+            url: "https://github.com/codehub-prog/MPCManagerFramework/releases/download/1.0.0/MPCManagerFramework.xcframework.zip",
+            checksum: "57174317fd23ecd9f091bdcdd82620ed95936e1500104ffbc7b71911570022f0"
+        )
     ]
 )
