@@ -1,1 +1,1 @@
-@_exported import MPCManagerFramework
+import Foundation
