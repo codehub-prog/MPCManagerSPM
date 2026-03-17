@@ -11,7 +11,9 @@ import SwiftUI
 
 @MainActor
 public final class MPCManager: NSObject {
-        
+    
+    public let shared = MPCManager()
+    
     private var serviceType: String!
     private var myPeerID = MCPeerID(displayName: UIDevice.current.name)
     private var session: MCSession!
@@ -23,7 +25,7 @@ public final class MPCManager: NSObject {
     
     public weak var delegate: MPCManagerDelegate?
     
-    public override init() {
+    private override init() {
         super.init()
     }
     
