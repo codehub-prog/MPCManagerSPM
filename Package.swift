@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MPCManagerSPM",
-            url: "https://github.com/codehub-prog/MPCManagerFramework/releases/download/1.0.5/MPCManagerFramework.xcframework.zip",
-            checksum: "2a7c07a254f2dc49acf7a096dca7a881e91440b4cf7689ae526a7947a1fb36cd"
+            url: "https://github.com/codehub-prog/MPCManagerFramework/releases/download/1.0.6/MPCManagerFramework.xcframework.zip",
+            checksum: "931e898621105bb137f9436203d4ff27545df6a942db10e158c040a7ca63e049"
         )
     ]
 )
